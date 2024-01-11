@@ -43,7 +43,7 @@
 		</div> -->
 		<div class="w-100 paybutton">
 			<button class="submitpay" onclick="Unity.call('anchor');">Pay</button>
-			<button class="submitpay" onclick="UnityBack()" style="margin: 4px auto;">Pay1</button>
+			<button class="submitpay" onclick="UnityBack()" style="margin: 4px auto;">Window</button>
 			<button class="submitpay" onclick="history.back()">Pay2</button>
 			<a href="check.html">Check</a>
 
@@ -69,8 +69,7 @@
 </script>
 <script>
 	function UnityBack() {
-		alert("Hello Unity!");
-		window.postMessage({ type: 'unityMessage', data: 'Hello Unity!' }, '*');
+		window.close();
 	}
 </script>
 
